@@ -1,1 +1,29 @@
-new.html.erb
+<div class="container">
+  <div class="masthead">
+    <h1>DTLA Hands</h1>
+    <button type="button" class="btn btn-danger"> Cancel </button>
+  </div>
+  <div class="page-header">
+    <h1><small>Create Event</small></h1>
+  </div>
+
+
+  <%= form_for @event do |f| %>
+  <ul class="list-unstyled">
+    <li> <%= f.text_field :title , :placeholder => "Event Title" %> </li>
+
+    <li> <%= f.text_field :location , :placeholder => "Location" %> </li>
+
+    <li> <%= f.text_field :content , :placeholder => "Event Details (200 character min)" %> </li>
+
+    <li class="large-tex-box"> <%= f.text_field :ext_url , :placeholder => "Info website URL" %> <li>
+
+    <li> <%= f.text_field :image_url , :placeholder => "Image Link" %> <li>
+
+    <li> <%= f.file_field :image_url %>
+
+    <% end %>
+
+
+</div>
+
