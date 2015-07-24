@@ -2,18 +2,19 @@
   <div class="container">
     <h1>DTLA Hands</h1>
     <h3>A posting resource board for the downtown LA community</h3>
-      <a class="btn btn-primary btn-lg">Learn more</a>
     </p>
   </div>
 </div>
 
-<div>
   <ul>
-  <% @events.each do |event| %>
-  <l1> <%= link_to event.title %>
+   <% @events.each do |band| %>
+    <li><%= event.title %></li>
+    <li><%= event.location %></li>
+    <li><%= event.date_time %></li>
+    <li><%=link_to nil,"#{event.ext_url}"%></li>
+    <li><img src="<%= event.image_url %>"></li>
    <% end %>
-  </li>
-
-  </ul>
+ </ul>
   
 </div>
+
