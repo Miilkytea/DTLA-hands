@@ -28,25 +28,3 @@ fnb = Event.create(
 #   name:  "Haim",
 #   genre: "Country Rock Revival Pop"
 # )
-
-# mac.music_videos << MusicVideo.create(
-#   title:           "Landslide", 
-#   video_embed_uri: "ZqCotgdEZsk"
-# )
-# mac.music_videos << MusicVideo.create(
-#   title:           "Blue Letter", 
-#   video_embed_uri: "7DKlOD9Qs_k"
-# )
-# mac.music_videos << MusicVideo.create(
-#   title:           "Never Going Back Again", 
-#   video_embed_uri: "GGyCx9WgGV8"
-# )
-
-# ham.music_videos << MusicVideo.create(
-#   title:           "Save Me", 
-#   video_embed_uri: "kiqIush2nTA"
-# )
-# ham.music_videos << MusicVideo.create(
-#   title:           "Forever", 
-#   video_embed_uri: "sEwM6ERq0gc"
-# )
