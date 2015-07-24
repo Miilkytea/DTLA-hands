@@ -1,11 +1,20 @@
 <div class="container">
-  <div class="masthead">
-    <h1>DTLA Hands</h1>
-    <button type="button" class="btn btn-danger"> Cancel </button>
-  </div>
-  <div class="page-header">
-    <h1><small>Create Event</small></h1>
-  </div>
+
+    <div class="masthead row">
+
+        <div class="col-sm-6">
+          <h1>DTLA Hands</h1>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="/events">
+            <button type="button" class="btn btn-danger"> Cancel </button>
+          </a>
+        </div>
+
+    </div>
+
+
 
 
   <%= form_for @event do |f| %>
@@ -21,6 +30,7 @@
     <li> <%= f.text_field :image_url , :placeholder => "Image Link" %> <li>
 
     <li> <%= f.file_field :image_url %>
+
 
     <% end %>
 
