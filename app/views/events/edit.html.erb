@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>DTLA Hands</h1>
+    <h3>A posting resource board for the downtown LA community</h3>
+      <a class="btn btn-primary btn-lg">Learn more</a>
+    </p>
+  </div>
+</div>
+
+<div>
+  <ul>
+    <% @events.each do |event| %>
+      <li><%= link_to event.title %></li>
+    <% end %>
+  </ul>
+
+</div>

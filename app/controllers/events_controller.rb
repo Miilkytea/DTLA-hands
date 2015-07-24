@@ -21,6 +21,10 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+  def show
+    @event = Event.find(params[:id])
+  end
+
   def update
     @event = Event.find(params[:id])
     if @post.update(event_params)
