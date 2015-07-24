@@ -7,9 +7,13 @@
   </div>
 </div>
 
+<div>
+  <ul>
+  <% @events.each do |event| %>
+  <l1> <%= link_to event.title %>
+   <% end %>
+  </li>
 
-<ul>
-  <% @event.each do |event| %>
-  <l1> <%= link_to event.title, event.location, event.date_time, event.ext_url, event.image_url, event.content %></li>
-
-</ul>
+  </ul>
+  
+</div>
