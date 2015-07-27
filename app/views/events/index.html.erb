@@ -1,5 +1,6 @@
 
 
+
   <ul>
    <% @events.each do |event| %>
     <li><%= event.title %></li>
@@ -10,5 +11,41 @@
    <% end %>
  </ul>
   
+
+<div class="container">
+
+    <div class="masthead row">
+
+        <div class="col-sm-6">
+          <h1>DTLA Hands</h1>
+        </div>
+
+        <div class="col-sm-6 ">
+          <a href="events/new">
+            <button type="button" class="btn btn-primary"> Create Event </button>
+          </a>
+        </div>
+
+    </div>
+
+    <div class="page-header row">
+
+    <h3><small>Welcome to DTLA Hands. An online community board to help promote positive outreach events.</small></h3>
+  </div>
+
+    <ul>
+
+     <% @events.each do |event| %>
+      <li><%= event.title %></li>
+      <li><%= event.location %></li>
+      <li><%= event.date_time %></li>
+      <li><%=link_to nil,"#{event.ext_url}"%></li>
+      <li><img src="<%= event.image_url %>"></li>
+     <% end %>
+     <a href="events/edit"><button type="button" class="btn btn-warning"> Edit </button></a>
+   </ul>
+
 </div>
+
+
 
